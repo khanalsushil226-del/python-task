@@ -13,13 +13,16 @@ else:
 
 name = input("enter your name: ")
 print("Hello", name, "would you like to proceed with the transaction? (yes/no)")
-if input().capitalize() == "Yes":
+user_input = input().capitalize()
+if user_input == "Yes":
    print("transaction processing....")
 else:
    print("transaction cancelled")
+   exit()
 
 print("what would you like to check?", name, "if you want to check your balance or transaction history? (balance/history)")
-if input().capitalize()=="Balance":
+user_choice = input().capitalize()
+if user_choice == "Balance":
     print("your balance is Rs. 100000")
 else:
     print("please visit bank for your transaction history")
