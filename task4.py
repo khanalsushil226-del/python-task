@@ -1,6 +1,6 @@
-import secrets
+import random
 
-otp = secrets.randbelow(9000) + 1000
+otp = random.randint(1000, 9999)
 
 print("Your OTP is:", otp)
 
