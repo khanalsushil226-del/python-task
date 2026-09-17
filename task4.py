@@ -19,10 +19,9 @@ if user_input == "Yes":
 else:
    print("transaction cancelled")
    exit()
-
 print("what would you like to check?", name, "if you want to check your balance or transaction history? (balance/history)")
 user_choice = input().capitalize()
 if user_choice == "Balance":
     print("your balance is Rs. 100000")
 else:
-    print("please visit bank for your transaction history")
+    print("please visit bank for your transaction history") 
